@@ -183,7 +183,7 @@
   <!-- LIDAR base_scan -->
   <link name="base_scan">
     <visual>
-      <origin rpy="0 0 0" xyz="-0.111 -0.076 -0.124"/>
+      <origin rpy="0 0 0" xyz="-0.111 -0.076 -0.124-180"/>
       <geometry>
         <mesh filename="package://rubot_mecanum_description/meshes/rubot/lidar.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -203,7 +203,7 @@
   </link>
   <joint name="scan_joint" type="fixed">
     <axis xyz="0 0 1"/>
-    <origin rpy="0 0 0" xyz="0.111 0.076 0.124"/>
+    <origin rpy="0 0 0" xyz="0.111 0.076 0.124-180"/>
     <parent link="base_link"/>
     <child link="base_scan"/>
   </joint>
